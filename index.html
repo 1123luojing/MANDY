@@ -3,33 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-       <title>GitHub网站</title>
-    <title>主页</title>
+    <title>GitHub网站</title>
     <style>
-        body, nav ul {
-            text-align: center;
+        html, body {
+            height: 100%; /* 使<body>高度填满整个窗口 */
+            margin: 0;
+            display: flex;
+            flex-direction: column; /* 布局方向为垂直 */
+            justify-content: center; /* 垂直居中 */
+            align-items: center; /* 水平居中 */
+            text-align: center; /* 文字居中对齐 */
         }
+
+        h1 {
+            margin: 0; /* 移除<标题>标签默认的上下外边距 */
+        }
+
         nav ul {
             list-style: none; /* 移除列表项目的标记 */
             padding: 0; /* 移除列表的内边距 */
         }
+
         nav li {
-            display: inline-block; /* 使列表项横向排列 */
-            margin-right: 10px; /* 添加右边距 */
+            margin: 20px 10px; /* 列表项周围添加外边距 */
         }
+
         nav a {
             text-decoration: none; /* 移除链接下划线 */
+            font-size: 72px; /* 设置字体大小 */
         }
     </style>
 </head>
 <body>
-    <h1>欢迎来到众合</h1>
-    <nav>
-        <ul>
-            <li><a href="personal_info.html">人员介绍</a></li>
-            <li><a href="experience.html">情感经历</a></li>
-        </ul>
-    </nav>
+    <div class="content">
+        <h1>欢迎来到众合</h1>
+        <nav>
+            <ul>
+                <li><a href="personal_info.html">人员介绍</a></li>
+                <li><a href="experience.html">情感经历</a></li>
+            </ul>
+        </nav>
+    </div>
 </body>
 </html>
