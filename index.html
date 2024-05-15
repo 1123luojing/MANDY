@@ -1,50 +1,79 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>首页</title>
-    <title>GitHub网站</title>
-    <style>
-        html, body {
-            height: 100%; /* 使<body>高度填满整个窗口 */
-            margin: 0;
-            display: flex;
-            flex-direction: column; /* 布局方向为垂直 */
-            justify-content: center; /* 垂直居中 */
-            align-items: center; /* 水平居中 */
-            text-align: center; /* 文字居中对齐 */
-        }
-
-        h1 {
-            margin: 0; /* 移除<标题>标签默认的上下外边距 */
-        }
-
-        nav ul {
-            list-style: none; /* 移除列表项目的标记 */
-            padding: 0; /* 移除列表的内边距 */
-        }
-
-        nav li {
-            margin: 20px 10px; /* 列表项周围添加外边距 */
-        }
-
-        nav a {
-            text-decoration: none; /* 移除链接下划线 */
-            font-size: 72px; /* 设置字体大小 */
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BSST-团队成员</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-image: url('img/背景.jpg'); /* 添加背景图 */
+        background-size: cover;
+        background-position: center;
+    }
+    .white-box {
+        background-color: white; /* 白色背景 */
+        margin: 3em auto; /* 上下边距为3em，左右居中 */
+        padding: 2em; /* 内边距 */
+        max-width: 45%; /* 缩小白框的最大宽度至40% */
+        border-radius: 10px; /* 边角圆滑 */
+        text-align: center; /* 使容器内的文本居中 */
+    }
+    .title {
+        font-size: 28px; /* 修改标题字号为28px */
+        font-weight: bold;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+    h2 {
+        font-size: 24px; /* 设置"h2"的字体大小为24px */
+    }
+    p {
+        font-size: 14px; /* 设置"p"的字体大小为14px */
+    }
+    .content, .detail { /* 对内容和细节应用同样的居中样式 */
+        text-align: center;
+    }
+    .member-photo {
+        max-width: 45%; /* 设置图片最大宽度为40% */
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    hr {
+        border: none;
+        height: 2px;
+        background-color: black; /* 黑色线条 */
+        margin: 1em 0;
+    }
+</style>
 </head>
 <body>
-    <div class="content">
-        <h1>欢迎来到众合</h1>
-        <nav>
-            <ul>
-                <li><a href="personal_info.html">人员介绍</a></li>
-                <li><a href="experience.html">情感经历</a></li>
-            </ul>
-        </nav>
+
+    <div class="white-box">
+        <div class="title">MEMBER 1</div>
+
+        <div class="content">
+            <h2>个人介绍</h2>
+            <div class="about-me">
+                <img class="member-photo" src="img/照片.JPG" alt="团队成员照片">
+                <p class="detail"><strong>姓名：</strong>毛妍 MaoYan</p >
+                <p class="detail"><strong>年龄：</strong>19</p >
+                <p class="detail"><strong>性别：</strong>女</p >
+                <p class="detail"><strong>学校：</strong>浙江万里学院</p >
+                <p class="detail"><strong>MBTI：</strong>ESTP</p >
+                <p class="detail"><strong>自我介绍：</strong>我来自艺术与科技（2+2）22A1，喜欢绘画摄影，对剪辑也很有兴趣。我正在学习GitHub，我认为非常有趣，但有点困难。
+                    我是毛烧烧的妈咪！我非常爱我的烧烧！
+                    ENDING…
+                    第五人格！启动！
+                    </p >
+            </div>
+              <hr> <!-- 在此处加入一条黑线 -->
+            <h2>联系方式</h2>
+            <p class="detail"><strong>邮箱：</strong>209183438@qq.com</p >
+            <p class="detail"><strong>电话：</strong>+86 18067296846</p >
+        </div>
     </div>
+
 </body>
 </html>
